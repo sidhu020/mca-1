@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+	display: none;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+	display: block;
+}
+.ckk1
+{
+	width: 75%;
+	display: "God is grat";
+}
+	
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Food menu</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li class="menu ckk1">Roti</li>
+      <li>Butter roti</li>
+      <li>Rumali roti</li>
+      <li>Missi roti</li>
+    </ul>
+  </div>
+
+<!--  <div class="column content">
+    <h1>Food detail</h1>
+    <p>Food is the only options for the living of the earth, we all are doing all these for the food only</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+  </div> -->
+  
+    <div class="menu column  ckk1">
+    <h1>ckk1 </h1>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer Text</p>
+</div>
+
+</body>
+</html>
