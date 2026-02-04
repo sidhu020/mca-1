@@ -1,0 +1,28 @@
+<!-- document object -->
+<html>  
+	<body>  
+		<script type="text/javascript">  
+			function totalelements()  
+			{  
+				var allgenders=document.getElementsByName("gender");  
+				alert("Total Genders:"+allgenders.length);
+				for(i=0;i<allgenders.length;i++)
+				{
+					if(allgenders[i].checked)
+						document.getElementById("radio checked").innerHTML = "Gender: " + allgenders[i].value;
+				}
+			}  
+		</script>  
+		<form>  
+			Male:<input type="radio" id="r1" name="gender" value="male">  
+			Male1:<input type="radio" id="r2" name="gender" value="male1">  
+			Female:<input type="radio" id="r3" name="gender" value="female"> 
+			<input type="button" onclick="totalelements()" value="Total Genders"> 
+			<div id="radio checked"></div>
+ 
+			 
+		</form>  
+
+
+ 	</body>  
+</html>  

@@ -1,0 +1,24 @@
+<!-- document object -->
+<html>  
+	<head>
+		<script type="text/javascript">  
+			function ckkfunc()  
+			{  
+				text="";
+				if(document.forms[0].elements[1].checked==true)
+					text="The double of the inputed number is :"+document.forms[0].num1.value*2;
+				else
+					text="The square of the inputed number is :"+document.forms[0].num1.value*document.forms[0].num1.value;
+				document.getElementById("demo").innerHTML = text;
+			}  
+		</script>  
+	</head>
+	<body>  
+		<form>  
+			Enter no:<input type="text" name="num1" value=0 oninput=ckkfunc()> <br/>
+			Double <input type=radio name=num2 onClick=ckkfunc()>
+			Square <input type=radio name=num2 onClick=ckkfunc()>
+		</form>  
+		<p id="demo"></p>
+ 	</body>  
+</html>  

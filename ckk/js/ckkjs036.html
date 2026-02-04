@@ -1,0 +1,19 @@
+<!-- document object -->
+<html>  
+	<head>
+		<script type="text/javascript">  
+			function ckksquare()  
+			{  
+				text="";
+				text=document.forms[0].num1.value*2;
+				document.getElementById("demo").innerHTML = text;
+			}  
+		</script>  
+	</head>
+	<body>  
+		<form>  
+			Enter no:<input type="text" name="num1" value=0 onInput="ckksquare()">  
+		</form>  
+		<p id="demo"></p>
+ 	</body>  
+</html>  

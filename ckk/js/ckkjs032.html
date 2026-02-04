@@ -1,0 +1,28 @@
+<!-- document object -->
+<html>  
+	<head>
+		<script type="text/javascript">  
+			function checkval()  
+			{  
+				text="Any of the above is not checked";
+				n=document.forms[0].gender.length;
+				for(i=0;i<n;i++)
+				{
+					if(document.forms[0].gender[i].checked==true)
+						text=document.forms[0].gender[i].value+" is checked";
+				}
+				document.getElementById("demo").innerHTML = text;
+			}  
+		</script>  
+	</head>
+	<body>  
+		<form>  
+			Male:<input type="radio" name="gender" value="male">  
+			Male1:<input type="radio" name="gender" value="male">  
+			Female:<input type="radio" name="gender" value="female">  
+			
+			<input type="button" onclick="checkval()" value="Total Genders">  
+		</form>  
+		<p id="demo"></p>
+ 	</body>  
+</html>  
