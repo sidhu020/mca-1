@@ -1,0 +1,36 @@
+<!-- ckkjq042.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<style>
+		div
+		{
+			width:150px;
+			height:150px;
+			background-size: cover;
+		}
+	</style>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("#bt1").click(function()
+			{
+				$("#div1" ).height(300).width(300).fadOut(3000);
+			});			
+			$("#bt2").click(function()
+			{
+				$("#div2" ).html("Height ="+$("#div1" ).height()+"<br>Width = "+$("#div1" ).width());			
+			});
+		});
+	</script>  
+	</head>  
+	<body>  
+		<button id="bt1">click me</button><br>	
+		<div id="div1" style="background-image:url(nature1.jpeg);"></div><br>
+		<div id="div2" style="border:double;"></div>
+		<button id="bt2">click me for width() and height()</button><br>
+	</body>  
+</html>  

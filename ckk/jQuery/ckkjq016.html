@@ -1,0 +1,27 @@
+<!-- ckkjq016.html -->
+<!DOCTYPE html>  
+<html>  
+	<head> 
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("input").focus(function()
+			{
+				$(this).css("background-color", "pink");
+			});
+			$("input").blur(function()
+			{
+				$(this).css("background-color", "blue");
+			});
+		});
+	</script>  
+	</head>  
+	<body>  
+		<h2>Chcking of focus and blur event</h2>
+		<input type="text" placeholder="name"><br/>
+		<input type="text" placeholder="Surname">
+	</body>  
+</html>  

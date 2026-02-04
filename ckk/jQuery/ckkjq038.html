@@ -1,0 +1,39 @@
+<!-- ckkjq038.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("#bt1").click(function()
+			{
+				$("#p1").prepend("ha, bhai, God is great");			
+			});
+			$("#bt2").click(function()
+			{
+				$("#p2").prepend("<b><i>ha, bhai, God is great</i></b>");			
+			});
+			$("#bt3").click(function()
+			{
+				$("ol").prepend("<li><b>Nicheni rite ram nam levu te agtyanu che</b></li>");			
+			});
+		});
+	</script>  
+	</head>  
+	<body>  
+		<h1>Checking of prepend</h1><br>
+		<p id="p1"> Say God is great (Before change text()) </p>
+		<p id="p2"> Say God is great (Before change html()) </p>
+		<ol>
+			<li> Ram Ram Bhaj </li>
+			<li> Ram Nam Rat </li>
+			<li> Ram Ram Bol </li>
+		</ol>
+		<button id="bt1">Prepend  p1</button>
+		<button id="bt2">Prepend  p2</button>
+		<button id="bt3">Prepend  list</button>
+	</body>  
+</html>  

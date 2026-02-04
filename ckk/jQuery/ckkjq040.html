@@ -1,0 +1,24 @@
+<!-- ckkjq040.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("#bt1").click(function()
+			{
+				$("p").remove();			
+			});
+		});
+	</script>  
+	</head>  
+	<body>  
+		<p> This will be removed </p>
+		<h1>Checking of remove(),it will remobe above and below me</h1><br>
+		<p> This will also be removed </p>
+		<button id="bt1">Remove</button>
+	</body>  
+</html>  

@@ -1,0 +1,33 @@
+<!-- ckkjq019.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<style>
+		span
+		{
+			display:none;
+		}
+		
+	</style>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("h2").mouseenter(function()
+			{
+				$( this ).next( "span" ).show(4000);
+			});
+			$("h2").mouseleave(function()
+			{
+				$( this ).next( "span" ).hide(2000);
+			});	
+		});
+	</script>  
+	</head>  
+	<body>  
+		<h2>Take mouse on me, you will be blessed by Ganptibapa</h2>
+		<span><img src="ganpatibapa.jpeg" width=100 height=120> </span>
+	</body>  
+</html>  

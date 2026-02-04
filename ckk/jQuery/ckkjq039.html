@@ -1,0 +1,29 @@
+<!-- ckkjq039.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("#bt1").click(function()
+			{
+				$("img").after("<br>Ganpatibapa moriya");			
+			});
+			$("#bt2").click(function()
+			{
+				$("img").before("Jay Ganesh, Jay Ganesh Jay Ganesh Deva<br>");			
+			});
+
+		});
+	</script>  
+	</head>  
+	<body>  
+		<h1>Checking of after and before</h1><br>
+		<img src="ganpatibapa.jpeg" width=180 height=210> <br>
+		<button id="bt1">After Photo</button>
+		<button id="bt2">Before photo</button>
+	</body>  
+</html>  

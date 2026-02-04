@@ -1,0 +1,34 @@
+<!-- ckkjq027.html -->
+<!DOCTYPE html>  
+<html>  
+	<head>
+	<style>
+		div
+		{
+			width:150px;
+			height:150px;
+			background-size: cover;
+		}
+	</style>
+	<title>Checking of jQuery</title>  
+	<script type="text/javascript" src="c:\jquery\jquery-3.7.1.min.js">  
+	</script>  
+	<script type="text/javascript" language="javascript">  
+		$(document).ready(function() 
+		{  
+			$("button").click(function()
+			{
+				$("#div1" ).slideToggle();				
+				$("#div2" ).slideToggle("slow");				
+				$("#div3" ).slideToggle(3000);				
+			});
+		});
+	</script>  
+	</head>  
+	<body>  
+		<button>click me</button><br>
+		<div id="div1" style="background-image:url(nature1.jpeg);"></div>
+		<div id="div2" style="background-image:url(nature2.jpeg);"></div>
+		<div id="div3" style="background-image:url(nature3.jpeg);"></div>
+	</body>  
+</html>  
