@@ -1,0 +1,39 @@
+<!DOCTYPE HTML> 
+
+<html>  
+   <head> 
+  
+      <script type = "text/javascript"> 
+         var db = openDatabase('mscitdb', '1.0', 'Testing', 2 * 1024 * 1024); 
+         var msg; 
+    
+         db.transaction(function (ts) 
+		 { 
+            ts.executeSql('CREATE TABLE IF NOT EXISTS stud (no,name)'); 
+            ts.executeSql('INSERT INTO stud(no,name) VALUES (1, "ckk")'); 
+            ts.executeSql('INSERT INTO stud(no,name) VALUES (2, "srd")'); 
+            msg = '<p>Log message created and row inserted.</p>'; 
+            document.querySelector('#status').innerHTML =  msg; 
+         });
+
+         db.transaction(function (ts) 
+		 { 
+            ts.executeSql('SELECT * FROM stud', [], function (ts, results) 
+			{ 
+               var len = results.rows.length, i; 
+               msg = "<p>Found rows: " + len + "</p>"; 
+               document.querySelector('#status').innerHTML +=  msg; 
+				for (i = 0; i < len; i++) 
+			   { 
+                  msg = "<p><b>" + results.rows.item(i).no+"  " +results.rows.item(i).name + "</b></p>"; 
+                  document.querySelector('#status').innerHTML +=  msg; 
+               } 
+              
+            }, null); 
+         }); 
+      </script> 
+   </head> 
+   <body> 
+      <div id = "status" name = "status">Status Message</div> 
+   </body> 
+</html>
